@@ -1,0 +1,4 @@
+pandas
+more-itertools
+openpyxl
+tqdm
