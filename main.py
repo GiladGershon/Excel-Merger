@@ -36,7 +36,6 @@ for file in os.listdir(path):
 
 print('Starting to process '+ str(len(file_list)) +' files.')
 for file in tqdm(file_list):    #for file in files folder
-    #print('Processing the file: '+file)
     file_name = path+'/'+file
     first_name_list = pd.read_excel(file_name  ,index_col=None, na_values=['NA'], usecols="A:A").values.tolist() #Collect first name
     last_name_list  = pd.read_excel(file_name  ,index_col=None, na_values=['NA'], usecols="B:B").values.tolist() #Collect last name
